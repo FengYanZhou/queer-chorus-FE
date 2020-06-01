@@ -1,0 +1,13 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><script type=text/javascript src=./static/jquery.min.js></script><script type=text/javascript src=./static/clipboard.min.js></script><title>北京酷儿合唱团</title><script>(function (doc, win) {
+        var docEl = doc.documentElement,
+          resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+          recalc    = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 20 * (clientWidth / 750) + 'px';
+            sessionStorage.setItem('fontSize', 20 * (clientWidth / 750))
+          };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+      })(document,window)</script><link href=./static/css/app.3b62ecfafdad71bffea0ee6d81476f58.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.c671b31a6294c60d458b.js></script><script type=text/javascript src=./static/js/app.a3116c31abfb7896383d.js></script></body></html>
